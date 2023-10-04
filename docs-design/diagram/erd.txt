@@ -1,0 +1,18 @@
+@startuml
+entity "image folder" as imgf {
+* id int
+--
+* name varchar(100)
+* date_created date
+}
+entity "image_info" as img {
+* id int
+--
+* name varchar(100)
+* stored_name varchar(150)
+* data mediumblob
+* image_folder_id int
+}
+
+imgf ||..o{ img
+@enduml
