@@ -1,0 +1,52 @@
+/* Utilities */
+.perfect-center {
+  justify-content: center;
+  align-items: center;
+}
+
+/* layout */
+#main-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}  
+
+section.group {
+  height: 250px;
+  width: 100%;
+  background-color: #eee;
+  overflow: auto;
+}
+
+section.image {
+  height: calc(100% - 250px);
+  width: 100%;
+  overflow: auto;
+}
+.image-folder {
+  width: 100px;
+  padding: 0.5em;
+}
+.image-folder .more-control {
+  display: none;
+}
+.image-folder:hover .more-control {
+  display: inline-block;
+  border-radius: 5px;
+  color: #bbb;
+}
+
+.image-info {
+  width: 220px;
+  padding: 0.5em;
+}
+.image-info .more-control {
+  display: none;
+  align-self: start;
+}
+.image-info:hover .more-control {
+  display: inline-block;
+  border-radius: 5px;
+  color: #bbb;
+}
