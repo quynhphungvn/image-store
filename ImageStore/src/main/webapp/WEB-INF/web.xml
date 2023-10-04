@@ -1,0 +1,49 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>HomeController</servlet-name>
+  	<display-name>HomeController</display-name>
+  	<description></description>
+  	<servlet-class>quynh.java.webapp.imagestore.controller.HomeController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminController</servlet-name>
+  	<display-name>AdminController</display-name>
+  	<description></description>
+  	<servlet-class>quynh.java.webapp.imagestore.controller.AdminController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>ImageController</servlet-name>
+  	<display-name>ImageController</display-name>
+  	<description></description>
+  	<servlet-class>quynh.java.webapp.imagestore.controller.ImageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HomeController</servlet-name>
+  	<url-pattern>/home</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>HomeController</servlet-name>
+  	<url-pattern>/home/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminController</servlet-name>
+  	<url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminController</servlet-name>
+  	<url-pattern>/admin/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageController</servlet-name>
+  	<url-pattern>/image</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ImageController</servlet-name>
+  	<url-pattern>/image/*</url-pattern>
+  </servlet-mapping>
+</web-app>
