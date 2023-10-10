@@ -10,7 +10,6 @@
   <title>Image Store ${selectedGroup.name}</title>
   <link rel="stylesheet" href="/ImageStore/libs/semantic-ui/semantic.min.css">
   <link rel="stylesheet" href="/ImageStore/libs/bootstrap/css/bootstrap-utilities.min.css">
-  <style><%@include file="./reset.css" %></style>
   <style><%@include file="./styles.css" %></style>
 </head>
 
@@ -77,57 +76,6 @@
 		            </div>
           		</div>	
         	</c:forEach>
-          <!-- <div class="image-folder">
-            <div class="d-flex align-items-center justify-content-between">
-              <a class="ui " href="#">
-                <i class="folder open outline icon fs-1"></i>  
-              </a>
-              <div class="ui icon top left pointing dropdown more-control p-2">
-                <i class="ellipsis vertical icon"></i>
-                <div class="menu">              
-                  <button class="item w-100"
-                    data-group-id="1"
-                    data-group-name="Group 1"
-                    onclick="showModalEditGroup(this)">
-                    <i class="edit icon"></i>
-                    <span>Edit</span>
-                  </button>
-                  <button class="item w-100"
-                    data-group-id="1"
-                    data-group-name="Group 1"
-                    data-selected-group-id="1"
-                    onclick="deleteGroup(this)">
-                    <i class="trash icon"></i>
-                    <span>Delete</span>
-                  </button>
-                  <div class="ui tiny modal edit-group">
-                    <i class="close icon"></i>
-                    <div class="header">
-                      Edit Folder
-                    </div>
-                    <div class="content">
-                      <form class="ui form" 
-                            method="POST"
-                            action="/ImageStore/admin/group/update">
-                        <input type="hidden" name="group-id" value="1">
-                        <div class="ui field">
-                          <span>Rename for: <strong class="group-name">Folder 1</strong> </span>
-                        </div>
-                        <div class="ui field">
-                          <label>New Name</label>
-                          <input type="text" >
-                        </div>
-                        <button class="ui button">Update</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <span>Folder 1 and 2 and 3</span>
-            </div>
-          </div> -->
         </div>
       </main>
       <footer class="d-flex justify-content-end p-2">
@@ -173,7 +121,7 @@
                   <i class="ellipsis vertical icon"></i>
                   <div class="menu">       
                     <button class="item w-100"
-                            data-link="${pageContext.request.serverName}:${pageContext.request.serverPort}/ImageStore/image/origin?id=${img.id}" 
+                            data-link="http://${pageContext.request.serverName}:${pageContext.request.serverPort}/ImageStore/image/origin?id=${img.id}" 
                             onclick="copyLinkToClipboard(this)">
                       <i class="linkify icon"></i>
                       <span>Copy</span>
